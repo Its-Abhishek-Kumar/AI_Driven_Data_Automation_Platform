@@ -345,7 +345,7 @@ export default function Pricing() {
                 <ul style={{ listStyle: 'none', padding: '0', display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '40px' }}>
                   {tier.features.map((feature, fIdx) => (
                     <li key={fIdx} style={{ display: 'flex', alignItems: 'start', gap: '10px', fontSize: '0.875rem', textAlign: 'left' }}>
-                      <img src="/svgs/chevron-right.svg" alt="" width="14" height="14" style={{ marginTop: '2px', filter: 'invert(1)' }} />
+                      <img src={`${import.meta.env.BASE_URL}svgs/chevron-right.svg`} alt="" width="14" height="14" style={{ marginTop: '2px', filter: 'invert(1)' }} />
                       <span style={{ color: 'var(--text-secondary)' }}>{feature}</span>
                     </li>
                   ))}

@@ -59,7 +59,7 @@ export default function Hero() {
       {/* Premium Badge */}
       <div style={{ marginBottom: '24px' }}>
         <span className="badge">
-          <img src="/svgs/arrow-trending-up.svg" alt="" width="14" height="14" style={{ marginRight: '6px' }} />
+          <img src={`${import.meta.env.BASE_URL}svgs/arrow-trending-up.svg`} alt="" width="14" height="14" style={{ marginRight: '6px' }} />
           RELEASE V1.0.4: ZERO-LATENCY AUTOMATIONS
         </span>
       </div>
@@ -103,11 +103,11 @@ export default function Hero() {
       }}>
         <a href="#pricing" className="btn btn-primary">
           GET STARTED FREE
-          <img src="/svgs/chevron-right.svg" alt="" width="14" height="14" style={{ filter: 'invert(1)' }} />
+          <img src={`${import.meta.env.BASE_URL}svgs/chevron-right.svg`} alt="" width="14" height="14" style={{ filter: 'invert(1)' }} />
         </a>
         <a href="#features" className="btn btn-secondary">
           EXPLORE FEATURES
-          <img src="/svgs/cog-8-tooth.svg" alt="" width="14" height="14" />
+          <img src={`${import.meta.env.BASE_URL}svgs/cog-8-tooth.svg`} alt="" width="14" height="14" />
         </a>
       </div>
 

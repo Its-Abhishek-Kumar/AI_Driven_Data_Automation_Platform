@@ -5,7 +5,7 @@ const FEATURES = [
     id: 0,
     title: "Real-Time Stream Ingestion",
     badge: "CORE ENGINE",
-    icon: "/svgs/arrow-trending-up.svg",
+    icon: "svgs/arrow-trending-up.svg",
     gridClass: "bento-item-large",
     description: "Ingest high-throughput logs and transactional updates from Apache Kafka, AWS Kinesis, or database CDC nodes. Built-in flow control adjusts rates dynamically, matching consumption limits with sub-millisecond latencies.",
     visual: (
@@ -39,7 +39,7 @@ const FEATURES = [
     id: 1,
     title: "Self-Healing Workflows",
     badge: "AUTONOMOUS",
-    icon: "/svgs/arrow-path.svg",
+    icon: "svgs/arrow-path.svg",
     gridClass: "",
     description: "AI agents continuously monitor pipeline logs. If schema drift, format errors, or type anomalies occur, Apex isolates the payload, generates corrections, and heals the node instantly without interrupting stream flow.",
     visual: (
@@ -56,7 +56,7 @@ const FEATURES = [
       }}>
         <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: '#ef4444' }}>FAIL_STAMP</span>
         <span style={{ display: 'inline-flex', animation: 'spin 2s linear infinite' }}>
-          <img src="/svgs/arrow-path.svg" alt="" width="16" height="16" style={{ filter: 'invert(1)' }} />
+          <img src={`${import.meta.env.BASE_URL}svgs/arrow-path.svg`} alt="" width="16" height="16" style={{ filter: 'invert(1)' }} />
         </span>
         <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: '#10b981' }}>RESOLVED</span>
       </div>
@@ -66,7 +66,7 @@ const FEATURES = [
     id: 2,
     title: "Autonomous Schema Mapping",
     badge: "COGNITIVE LAYER",
-    icon: "/svgs/link.svg",
+    icon: "svgs/link.svg",
     gridClass: "bento-item-vertical",
     description: "Map relational variables across disparate target destinations automatically. Neural nodes match source columns, identify primary key relations, and configure transformation paths with over 99.8% semantic mapping precision.",
     visual: (
@@ -82,17 +82,17 @@ const FEATURES = [
       }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: '0.7rem', color: 'var(--accent)', fontFamily: 'var(--font-mono)' }}>source_id (int)</span>
-          <img src="/svgs/link-solid.svg" alt="" width="12" height="12" style={{ filter: 'invert(1)' }} />
+          <img src={`${import.meta.env.BASE_URL}svgs/link-solid.svg`} alt="" width="12" height="12" style={{ filter: 'invert(1)' }} />
           <span style={{ fontSize: '0.7rem', color: '#10b981', fontFamily: 'var(--font-mono)' }}>userId (varchar)</span>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: '0.7rem', color: 'var(--accent)', fontFamily: 'var(--font-mono)' }}>created_at (ts)</span>
-          <img src="/svgs/link-solid.svg" alt="" width="12" height="12" style={{ filter: 'invert(1)' }} />
+          <img src={`${import.meta.env.BASE_URL}svgs/link-solid.svg`} alt="" width="12" height="12" style={{ filter: 'invert(1)' }} />
           <span style={{ fontSize: '0.7rem', color: '#10b981', fontFamily: 'var(--font-mono)' }}>timestamp (epoch)</span>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: '0.7rem', color: 'var(--accent)', fontFamily: 'var(--font-mono)' }}>amount_cents (int)</span>
-          <img src="/svgs/link-solid.svg" alt="" width="12" height="12" style={{ filter: 'invert(1)' }} />
+          <img src={`${import.meta.env.BASE_URL}svgs/link-solid.svg`} alt="" width="12" height="12" style={{ filter: 'invert(1)' }} />
           <span style={{ fontSize: '0.7rem', color: '#10b981', fontFamily: 'var(--font-mono)' }}>price (decimal)</span>
         </div>
       </div>
@@ -102,7 +102,7 @@ const FEATURES = [
     id: 3,
     title: "Local Developer Sandbox",
     badge: "PLAYGROUND",
-    icon: "/svgs/cog-8-tooth.svg",
+    icon: "svgs/cog-8-tooth.svg",
     gridClass: "bento-item-large",
     description: "Launch offline dockerized instances of Apex pipelines. Trigger mock event generators, trace transformation costs, analyze memory heaps, and monitor layout execution directly from your command terminal.",
     visual: (
@@ -175,11 +175,11 @@ export default function FeatureBento() {
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                      <img src={feature.icon} alt="" width="20" height="20" style={{ filter: 'drop-shadow(0 0 4px var(--accent))' }} />
+                      <img src={`${import.meta.env.BASE_URL}${feature.icon}`} alt="" width="20" height="20" style={{ filter: 'drop-shadow(0 0 4px var(--accent))' }} />
                       <span className="accordion-title">{feature.title}</span>
                     </div>
                     <img
-                      src="/svgs/chevron-down.svg"
+                      src={`${import.meta.env.BASE_URL}svgs/chevron-down.svg`}
                       alt=""
                       className="accordion-icon"
                       width="14"
@@ -204,7 +204,7 @@ export default function FeatureBento() {
                   {/* Desktop Card Layout */}
                   <div className="bento-content-desktop">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '20px' }}>
-                      <img src={feature.icon} alt="" width="24" height="24" style={{ filter: 'drop-shadow(0 0 4px var(--accent))' }} />
+                      <img src={`${import.meta.env.BASE_URL}${feature.icon}`} alt="" width="24" height="24" style={{ filter: 'drop-shadow(0 0 4px var(--accent))' }} />
                       <span className="badge">{feature.badge}</span>
                     </div>
                     <div>

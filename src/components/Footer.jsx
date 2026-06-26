@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Logo & Info column */}
           <div style={{ maxWidth: '300px', textAlign: 'left' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
-              <img src="/svgs/cube-16-solid.svg" alt="Apex Logo" width="24" height="24" />
+              <img src={`${import.meta.env.BASE_URL}svgs/cube-16-solid.svg`} alt="Apex Logo" width="24" height="24" />
               <span style={{ 
                 fontFamily: 'var(--font-mono)', 
                 fontWeight: '700', 
